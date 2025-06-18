@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Manipulation</title>
+        <link rel="stylesheet" href="prac.css">
+    </head>
+    <body>
+        <h1>DOM Manipulation</h1>
+        <p>Today we control the wntire webpage with javascript!</p>
+
+        <div class="lab-section">
+            <h2>Lab 1: Dynamic Element Creation</h2>
+            <div id="element-playground" class="demo-box">
+                <p>Element will be created here dynamically!</p>
+            </div>
+
+            <div>
+                <select id="elementType">
+                    <option value="div">Div Element</option>
+                    <option value="p">Paragraph</option>
+                    <option value="h3">Heading</option>
+                    <option value="button">Button</option>
+                    <option value="img">Image</option>
+                </select>
+                <input type="text" id="elementContent" placeholder="Element Content">
+                <button onclick="createCustomElement()">Create Element</button>
+                <button onclick="clearPlayground()">Clear All</button>
+            </div>
+        </div>
+
+        <div class="lab-section">
+            <h2>Lab 2: List Manipulation Master</h2>
+            <div class="demo-box">
+                <h3>Indian States List</h3>
+                <ul id="states-list">
+                    <li>Delhi</li>
+                    <li>Maharashtra</li>
+                    <li>Gujarat</li>
+                </ul>
+            </div>
+            
+            <div>
+                <input type="text" id="state-input" placeholder="Enter State Name">
+                <button onclick="createState()">Add State</button>
+                <button onclick="removeLastState()">Remove Last</button>
+                <button onclick="sortStates()">Sort A-Z</button>
+                <button onclick="highlightStates()">Highlight All</button>
+            </div>
+        </div>
+        <script type="text/JavaScript" src="prac.js">
+    </script>
+    </body>
+</html>
